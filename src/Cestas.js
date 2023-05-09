@@ -1,5 +1,5 @@
 import { Text } from 'react-native';
 
 export default function Cesta(){
-    return <Text>Cesta</Text>
+    return <Text>Componente Cesta</Text>
 }

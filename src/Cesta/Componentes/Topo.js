@@ -4,10 +4,10 @@ import Texto from "../../Componentes/Texto";
 import TopoImage from '../../../assets/topo.png';
 
 const width = Dimensions.get('screen').width;
-export default function Topo() {
+export default function Topo({ titulo }) {
     return <>
         <Image source={TopoImage} style={estilos.topo} />
-        <Texto style={estilos.Titulo}>Detalhes da Cesta</Texto>
+        <Texto style={estilos.Titulo}>{titulo}</Texto>
     </>
 }
 

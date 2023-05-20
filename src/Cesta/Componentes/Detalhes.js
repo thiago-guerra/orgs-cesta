@@ -1,6 +1,7 @@
 import React from "react";
 import Texto from "../../Componentes/Texto";
 import { Image, StyleSheet, View } from "react-native";
+import Botao from "../../Componentes/Botao";
 
 export default function Detalhes({ detalhes }) {
     return <>
@@ -11,7 +12,13 @@ export default function Detalhes({ detalhes }) {
         </View>
         <Texto style={estilos.descricao}>{detalhes.descricao}</Texto>
         <Texto style={estilos.preco}>{detalhes.preco}</Texto>
+        <Botao descricao={detalhes.descBotao} onClick={clickBtnComprar}></Botao>
     </>
+}
+
+function clickBtnComprar ()
+{
+   alert('Inserido no carrinho');
 }
 
 const estilos = StyleSheet.create({
